@@ -1,5 +1,5 @@
 # 0x16. C - Simple Shell Repository
-This project was built by  **Adefemi Oreyomi** and **Barigbue Nbira**.
+This project was built by **Adefemi Oreyomi** and **Barigbue Nbira**.
 
 This repository contains the files for the simple_shell project. It can be compiled using GCC and will execute a simple shell that can be used for some basic tasks and programs most commonly found in the /bin/ folder.
 
