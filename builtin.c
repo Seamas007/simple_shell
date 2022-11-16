@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * _myexit - exits the shell
  * @info: Structure containing potential arguments. Used to maintain
@@ -27,7 +26,6 @@ return (-2);
 info->err_num = -1;
 return (-2);
 }
-
 /**
  * _mycd - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
@@ -53,7 +51,6 @@ chdir_ret = chdir(dir);
 else if (_strcmp(info->argv[1], "-") == 0)
 {
 if (!_getenv(info, "OLDPWD="))
-{
 _puts(s);
 _putchar('\n');
 return (1);
@@ -76,12 +73,11 @@ _setenv(info, "PWD", getcwd(buffer, 1024));
 }
 return (0);
 }
-
 /**
  * _myhelp - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
- *  Return: Always 0
+ * Return: Always 0
  */
 int _myhelp(info_t *info)
 {
@@ -91,4 +87,3 @@ _puts("help call works. Function not yet implemented \n");
 if (0)
 _puts(*arg_array); /* temp att_unused workaround */
 return (0);
-}
